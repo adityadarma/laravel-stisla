@@ -14,4 +14,4 @@
 ```
 
 ### License
-Laravel-logger is licensed under the MIT license. Enjoy!
+Laravel Stisla is licensed under the MIT license. Enjoy!
