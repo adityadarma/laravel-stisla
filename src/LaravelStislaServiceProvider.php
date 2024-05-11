@@ -24,22 +24,25 @@ class LaravelStislaServiceProvider extends ServiceProvider
     }
 
     /**
-     * Bootstrap services.
-     *
-     * @return void
-     */
-    public function boot(): void
-    {
-        $this->publish();
-    }
-
-    /**
      * Register services.
      *
      * @return void
      */
     public function register(): void
     {
-        $this->commands([LaravelStislaInstall::class]);
+        //
+    }
+
+    /**
+     * Bootstrap services.
+     *
+     * @return void
+     */
+    public function boot(): void
+    {
+        if ($this->app->runningInConsole()) {
+            $this->publish();
+            $this->commands([LaravelStislaInstall::class]);
+        }
     }
 }

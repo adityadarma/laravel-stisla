@@ -12,6 +12,14 @@
 ```php
     php artisan stisla:install
 ```
+3. Remove package via terminal:
+
+```bash
+    composer remove adityadarma/laravel-stisla
+```
+
+### Credit
+Author Template on https://github.com/stisla/stisla
 
 ### License
 Laravel Stisla is licensed under the MIT license. Enjoy!
